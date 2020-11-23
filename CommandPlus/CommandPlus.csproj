@@ -8,6 +8,8 @@
     <Company>Hot Workshop</Company>
     <Description>A stupidly simple command parsing library for blockheads.</Description>
     <Copyright>(C) RelaperCrystal 2020. Some rights reserved.</Copyright>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
 </Project>

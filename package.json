@@ -1,0 +1,27 @@
+{
+  "name": "commandplus",
+  "version": "0.1.1",
+  "description": "This package is only used for commitiizen",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NoArtifactLights/CommandPlus.git"
+  },
+  "author": "RelaperCrystal",
+  "license": "LGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/NoArtifactLights/CommandPlus/issues"
+  },
+  "homepage": "https://github.com/NoArtifactLights/CommandPlus#readme",
+  "devDependencies": {
+    "cz-emoji": "^1.3.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-emoji"
+    }
+  }
+}
