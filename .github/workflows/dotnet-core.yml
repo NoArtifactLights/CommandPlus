@@ -27,10 +27,3 @@ jobs:
       uses: actions/upload-artifact@v2.2.1
       with:
         path: CommandPlus/bin
-    - name: Push Nupkg
-      uses: tanaka-takayoshi/nuget-publish-to-github-packages-action@v2.1
-      with:
-        nupkg-path: CommandPlus/bin/Debug/*.nupkg
-        repo-owner: NoArtifactLights
-        gh-user: RelaperCrystal
-        token: ${{ secrets.GITHUB_TOKEN }}    
