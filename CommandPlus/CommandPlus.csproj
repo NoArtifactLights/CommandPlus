@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <Version>0.1.1</Version>
-    <PackageLicenseExpression>LGPL-3.0</PackageLicenseExpression>
+    <PackageLicenseExpression>LGPL-3.0-or-later</PackageLicenseExpression>
     <Authors>RelaperCrystal</Authors>
     <Company>Hot Workshop</Company>
     <Description>A stupidly simple command parsing library for blockheads.</Description>
