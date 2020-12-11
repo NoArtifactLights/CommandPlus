@@ -2,6 +2,10 @@
 
 A stupidly-simple command parser library meant for beginners.
 
+## Install
+
+Command Plus is available as *Package*.
+
 ## Usage
 
 First, create a class inherits `CommandPlus.Commanding.Command`:

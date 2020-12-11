@@ -8,9 +8,9 @@ namespace CommandPlus.Test
 {
     public class ParamLessTestCommand : Command
     {
-        public override void Executed(object[] arguments)
+        public override CommandResult Executed(object[] arguments)
         {
-            Common.paramLessSuccess = true;
+            return new CommandResult("Success", CommandResultStatus.Success);
         }
     }
 
@@ -23,7 +23,7 @@ namespace CommandPlus.Test
             this.ArgumentTypes.Add(typeof(int));
         }
 
-        public override void Executed(object[] arguments)
+        public override CommandResult Executed(object[] arguments)
         {
             string str = this.VerifyAndConstruct<string>(0, arguments[0]);
             bool b = this.VerifyAndConstruct<bool>(1, arguments[1]);
@@ -32,6 +32,8 @@ namespace CommandPlus.Test
             Assert.AreEqual("yeah", str);
             Assert.IsFalse(b);
             Assert.AreEqual(20, i);
+
+            return new CommandResult("Success", CommandResultStatus.Success);
         }
     }
 
@@ -42,12 +44,14 @@ namespace CommandPlus.Test
             this.ArgumentTypes.Add(typeof(bool));
         }
 
-        public override void Executed(object[] arguments)
+        public override CommandResult Executed(object[] arguments)
         {
             Console.WriteLine("executed!");
             if (arguments.Length != 1) throw new InvalidOperationException("It transfers invalid to our method!");
             Console.WriteLine((bool)arguments[0]);
             Assert.IsTrue((bool)arguments[0]);
+
+            return new CommandResult("Success", CommandResultStatus.Success);
         }
     }
 }

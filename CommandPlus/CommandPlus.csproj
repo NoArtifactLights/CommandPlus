@@ -10,6 +10,7 @@
     <Copyright>(C) RelaperCrystal 2020. Some rights reserved.</Copyright>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <RepositoryUrl>https://github.com/NoArtifactLights/CommandPlus</RepositoryUrl>
   </PropertyGroup>
 
 </Project>
